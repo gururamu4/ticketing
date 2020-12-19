@@ -4,12 +4,23 @@
   "description": "",
   "main": "index.js",
   "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap": "lerna bootstrap --hoist",
+    "start": "lerna run start --stream",
+    "tsc": "lerna run tsc --stream",
+    "watch": "lerna run watch --stream"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Toorak-Capital/client-service-monorepo"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "lerna": "^3.22.1"
-  }
+  },
 }

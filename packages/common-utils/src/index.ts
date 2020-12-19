@@ -1,7 +1,3 @@
 export const test = () => {
-    console.log('hi there');
+    console.log('hi sthere');
 }
-
-const app = require("@guru/ticketing");
-
-console.log(app)

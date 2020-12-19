@@ -9,9 +9,9 @@ build:
     push: false
   artifacts:
     - image: ticketing/auth
-      context: auth
+      context: .
       docker:
-        dockerfile: Dockerfile
+        dockerfile: packages/auth/Dockerfile
       sync:
         manual:
           - src: 'src/**/*.ts'

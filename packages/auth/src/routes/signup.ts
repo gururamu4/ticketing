@@ -15,7 +15,7 @@ router.post('/user/signup', [
     }
     console.log('creating a user!');
 
-    throw new DatabaseError();
+    
 
     res.send({})
 });
